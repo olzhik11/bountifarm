@@ -42,7 +42,7 @@ export default {
   border: 2px solid;
   margin: 5px;
   border-radius: 10px;
-  width: 40%;
+  min-width: 50%;
 }
 .left{
   display: flex;
