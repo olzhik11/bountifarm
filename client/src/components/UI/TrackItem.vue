@@ -1,7 +1,7 @@
 <template>
   <div class="track">
       <div class="left">
-    <div  class="img">
+    <div class="img">
       <img :src="result.artworkUrl100" alt="vue">
     </div>
     <div class="description">
@@ -42,7 +42,7 @@ export default {
   border: 2px solid;
   margin: 5px;
   border-radius: 10px;
-  min-width: 50%;
+  min-width: 40%;
 }
 .left{
   display: flex;

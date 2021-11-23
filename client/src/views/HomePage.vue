@@ -2,9 +2,11 @@
   <div class="homePage">
     <TheNavBar  />
     <TheBaseInput @song="getSong"  />
+    <div class="group">
       <TrackItem
           v-for="result in results" :key="result.id" :result="result"
       />
+    </div>
   <div ref="observer" class="observer"></div>
     <div v-if="noResult" class="results">No results found...</div>
   <div v-if="end" class="end">End of the list</div>
@@ -99,7 +101,10 @@ export default {
   border: 2px solid;
   border-radius: 10px;
   padding: 5px;
-
 }
-
+.group{
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
 </style>
